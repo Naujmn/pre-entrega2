@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+/*----RESET----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----HEADER----*/
+.barra{
+    background-color: #F6F6F6;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.barra img{
+    height: 70px;
+}
+
+.barra nav ul{
+    list-style: none;
+}
+.barra nav ul li a{
+    text-decoration: none;
+    color: #73794A;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.barra nav ul li a:hover{
+    color: #D4AF37;
+}
+.barra nav li{
+    display: inline-block;
+    margin: 10px;
+}
+.barra nav li:hover{
+    transform: scale(1.1);
+}
+
+/*----MAIN----*/
+
+/*----PHRASE HOME----*/
+.phrase{
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.phrase div img{
+    height: 250px;
+    
+}
+.phrase h1{
+    color: #FDFDFD;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/*----TEAM----*/
+
+
+.grid-team{
+    margin: 5px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-team .about{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.grid-team .persons{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/colombia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+      ".      nicolas         ."
+      "juan  valentina  ricardo"
+      "juanjo     .      morena";
+}
+.nicolas{
+    grid-area: nicolas;
+    display: grid;
+    place-items: center;
+}
+.juan{
+    grid-area: juan;
+    display: grid;
+    place-items: center;
+}
+.valentina{
+    grid-area: valentina;
+    display: grid;
+    place-items: center;
+}
+.ricardo{
+    grid-area: ricardo;
+    display: grid;
+    place-items: center;
+}
+.juanjo{
+    grid-area: juanjo;
+    display: grid;
+    place-items: center;
+}
+.morena{
+    grid-area: morena;
+    display: grid;
+    place-items: center;
+}
+
+.grid-team .about h2{
+    color: #73794A;
+    border: 2px solid rgba(115, 121, 74, 1);
+    border-radius: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px ;
+}
+.grid-team .about p2{
+    color: #73794A;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+}
+.grid-team .persons h3{
+    color: #FDFDFD;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.grid-team .persons p{
+    color: #FDFDFD;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 5px ;
+}
+
+.grid-team .persons img{
+    width: auto;
+    height: 150px;
+}
+
+/*----CARRUSEL----*/
+/*
+.carrusel {
+    width: 100%;
+    height: cover;
+    background-image: url("../img/carrusel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.carrusel div{
+    border: 2px solid rgba(255, 255, 255, 0.952);
+    border-radius: 18px;
+    width: 360px;
+    height: 485px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.carrusel div h2{
+    color: #FFFFFF;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.carrusel div h3{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.carrusel div p{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+}
+.carrusel div a{
+    text-decoration: none;
+    color: #D4AF37;
+    background-color: #FFFFFF;
+    border-radius: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+}
+.carrusel div img{
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+}
+*/
+/*----REVIEWS----*/
+
+.reviews {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.reviews .comments{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.reviews .comments div {
+    width: 350px;
+    height: 330px;
+    margin: 25px;
+    text-align: center;
+    display: inline-block;
+}
+.reviews h2{
+    color: #73794A;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+}
+.reviews .comments h3{
+    color: #73794A;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.reviews .comments p{
+    color: #73794A;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.reviews .comments img{
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border-radius: 16px;
+}
+
+/*----CONTACTO----*/
+
+.grid-contact{
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+    "title   title"
+    "form    contact";
+}
+.title{
+    grid-area: title;
+    display: grid;
+    place-items: center;
+}
+.contact{
+    grid-area: contact;
+    margin: 50px;
+   
+}
+.form .form_container{
+    grid-area: form;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-contact h2{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    text-align: center;
+}
+.grid-contact p{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-color: #73794A;
+    text-align: center;
+}
+.grid-contact .contact img{
+        width: 150px;
+        height: cover;
+}
+
+/*----FOOTER----*/
+footer{
+    background-color: #73794A;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer img{
+    height: 70px;
+}
+footer p{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 5px;
+}
+footer div a{
+    color: #FFFFFF;
+    font-size: 40px;
+    display: inline-block;
+    margin: 5px;
+}
+
+/*---MEDIA QUERY--*/
+
+@media (max-width:686px) {
+    .barra{
+        flex-direction: column;
+    }
+    .barra nav ul li a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:686px) {
+    .phrase div img{
+        height: 200px;
+        
+    }
+    .phrase h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:350px) {
+    .phrase div img{
+        height: 125px;
+        
+    }
+    .phrase h1{
+        font-size: 12px;
+    }
+}
+
+@media  screen and (max-width:1176px) {
+    .grid-team .persons{
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "nicolas       juan"
+        "valentina  ricardo"
+        "juanjo      morena";
+    }
+}
+@media  screen and (max-width:350px) {
+    .grid-team .persons{
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "nicolas       juan"
+        "valentina  ricardo"
+        "juanjo      morena";
+    }
+    .grid-team .persons h3{
+        font-size: 15px; 
+    }
+    .grid-team .persons p{
+        font-size: 15px; 
+    }
+    .grid-team .about h2{
+        font-size: 15px;    
+        
+    }
+    .grid-team .about p2{
+        font-size: 15px;    
+        
+    }
+}
+@media screen and (max-width:768px){
+    .grid-team{
+        margin: 5px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:1186px) {
+    .reviews .comments div{
+        height: 330px;
+    }
+}
+
+@media (max-width:876px) {
+    .reviews{
+       width: auto;
+       height: 1200px;
+    }
+    .comments{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:876px){
+    .grid-contact{
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 1fr;
+        grid-template-areas: 
+        "title  "
+        "form   "
+        "contact";
+    }
+}
