@@ -8,6 +8,13 @@
 
 /*----HEADER----*/
 .barra{
+    background-color: #FDFDFD;
+}
+
+.barra a img{
+    height: 70px;
+}
+/*.barra{
     background-color: #F6F6F6;
     padding: 10px;
     position: sticky;
@@ -39,13 +46,13 @@
 .barra nav li:hover{
     transform: scale(1.1);
 }
-
+*/
 /*----MAIN----*/
 
 /*----PHRASE HOME----*/
 .phrase{
     width: 100%;
-    height: 600px;
+    height: 100vh;
     background-image: url("../img/home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +63,7 @@
     align-items: center;
 }
 .phrase div img{
-    height: 250px;
+    height: 300px;
     
 }
 .phrase h1{
@@ -162,31 +169,34 @@
 }
 
 /*----CARRUSEL----*/
-/*
+
 .carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
     width: 100%;
-    height: cover;
+    height: 100vh;
     background-image: url("../img/carrusel.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    align-items: center;
 }
 .carrusel div{
-    border: 2px solid rgba(255, 255, 255, 0.952);
     border-radius: 18px;
-    width: 360px;
+    width: 345px;
     height: 485px;
     margin: 20px;
     text-align: center;
     display: inline-block;
 }
-.carrusel div h2{
+.carrusel h2{
     color: #FFFFFF;
     font-size: 19px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
-.carrusel div h3{
+.carrusel h3{
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -196,7 +206,7 @@
     align-items: center;
     margin: auto;
 }
-.carrusel div p{
+.carrusel p{
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -218,11 +228,11 @@
     text-align: center;
 }
 .carrusel div img{
-    width: 100%;
-    height: 300px;
-    border-radius: 16px;
+    width: 350px;
+    height: 350px;
+    border-radius: 14px;
 }
-*/
+
 /*----REVIEWS----*/
 
 .reviews {
@@ -261,7 +271,7 @@
 }
 .reviews .comments p{
     color: #73794A;
-    font-size: 12px;
+    font-size: 13px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     text-align: justify;
@@ -278,7 +288,7 @@
 }
 
 /*----CONTACTO----*/
-
+/*
 .grid-contact{
     width: 100%;
     height: 500px;
@@ -329,6 +339,156 @@
         width: 150px;
         height: cover;
 }
+*/
+.container {
+    display:flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0 0 0 / 0.8)), url(../img/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: center ;
+
+}
+.container {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding: 40px;
+    height: 600px;
+}
+
+.box-info {
+    color:#ffffff;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.box-info > h2 {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+.data > p {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.data > p > i {
+    color: #73794a;;
+    margin-right: 10px;
+    font-size:30px;
+}
+
+.links {
+    display:flex;
+}
+.links img{
+    width: 150px;
+    height: auto;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+}
+
+.input-box {
+    position:relative;
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+    border-radius: 18px;
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color:#a3a3a3;
+    
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom:3px solid #73794a;
+    animation: shake .2s;
+}
+
+.input-box > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#fff;
+    letter-spacing: 1.5px;
+    border-radius: 18px;
+}
+
+
+.input-box > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.input-box > input:focus ~ i {
+    color:#73794a;
+}
+
+form > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: #73794a;
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+form > button:hover,
+.links > a:hover {
+    background: #555a36;
+}
+
 
 /*----FOOTER----*/
 footer{
@@ -448,6 +608,7 @@ footer div a{
     }
 }
 
+/*
 @media screen and (max-width:876px){
     .grid-contact{
         width: 100%;
@@ -458,5 +619,68 @@ footer div a{
         "title  "
         "form   "
         "contact";
+    }
+}
+*/
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+ }
+
+@media screen and (max-width:997px) {
+    .container {
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+
+    .box-info {
+        gap:15px;
+    }
+
+    .box-info > h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:501px) {
+    .container {
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+
+    .box-info {
+        gap:15px;
+    }
+
+    .box-info > h2 {
+        font-size: 1.5rem;
+    }
+    .links > img {
+        width: auto;
+        height: 70px;
+    }
+}
+@media screen and (max-width:425px) {
+    
+    .data > p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    
+    footer p{
+        font-size: 12px;
     }
 }
