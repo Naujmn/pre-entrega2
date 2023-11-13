@@ -1,72 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-    crossorigin="anonymous"
-  />
-    <link rel="stylesheet" href="../css/style.css">
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" sizes="32x32" type="png" href="../img/favicon.png" />
     <title>Document</title>
-</head>
-<body>
-    <header class="barra">
-        <img src="../img/logo.png" alt="Logo nclhospitality">
-        <nav>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="./about-us.html">ABOUT US</a></li>
-                <li><a href="./premier-travel.html">PREMIER TRAVEL</a></li>
-                <li><a href="./reviews.html">REVIEWS</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="grid-contact">
-            <div class="title">
-                <h2>CONTACT US</h2>
+  </head>
+  <body>
+    <!--<header class="barra">
+      <img src="../img/logo.png" alt="Logo nclhospitality" />
+      <nav>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="./about-us.html">ABOUT US</a></li>
+          <li><a href="./premier-travel.html">PREMIER TRAVEL</a></li>
+          <li><a href="./reviews.html">REVIEWS</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top barra">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"
+              ><img src="../img/logo.png" alt="Logo nclhospitality"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about-us.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./premier-travel.html"
+                    >PREMIER TRAVEL</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./reviews.html">REVIEWS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">CONTACT</a>
+                </li>
+              </ul>
             </div>
-            <form class="form">
-                <div class="form_container">
-                    <input type="text" class="form_input" placeholder="Your Name*" />
-                    <input type="email" class="form_input" placeholder="Your Email*" />
-                    <input type="number" class="form_input" placeholder="Your Phone*" />
-                    <textarea class="form_input form_input--message" placeholder="Your Message*"></textarea>
-
-                    <input type="submit" value="Send" class="form_cta" />
-                </div>
-            </form>
-            <div class="contact">
-                <p>Email: management@nclhospitality.com</p>
-                <p>Contact us: +57 (311) 6292698</p>
-                <p>We accept all methods of payment</p>
+          </div>
+        </nav>
+      </header>
+    <main>
+        <section class="container">
+            <div class="box-info">
+              <h2>CONTACT US</h2>
+              <div class="data">
+                <p><i class="fa-solid fa-phone"></i> +57 (311) 6292698</p>
+                <p><i class="fa-solid fa-envelope"></i>management@nclhospitality.com</p>
+                <p><i class="fa-solid fa-credit-card"></i>We accept all methods of payment</p>
+              </div>
+              <div class="links">
                 <img src="../img/metodos-de-pago/visa.png" alt="Visa Card" />
                 <img src="../img/metodos-de-pago/mastercard.png" alt="Master Card" />
                 <img src="../img/metodos-de-pago/amex.png" alt="Amex Card" />
+              </div>
             </div>
-        </section>
+            <form>
+              <div class="input-box">
+                <input type="text" placeholder="Your Name*" required />
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="input-box">
+                <input type="email" required placeholder="Your Email*" />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="input-box">
+                <input type="number" placeholder="Your Phone*" />
+                <i class=""></i>
+              </div>
+              <div class="input-box">
+                <textarea placeholder="Your Message*"></textarea>
+              </div>
+              <button type="submit">Send</button>
+            </form>
+          <section/>
     </main>
     <footer>
-        <img src="../img/logo-blanco.png" alt="">
-        <p>Thank you for choosing us to bring your travel dreams to life. Your satisfaction is our greatest reward</p>
-        <div>
-            <a href="https://www.instagram.com/nclhospitality/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a> 
-            <a href="" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>  
-            <a href="https://wa.me/3116292698" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>     
-        </div>
+      <img src="../img/logo-blanco.png" alt="" />
+      <p>
+        Thank you for choosing us to bring your travel dreams to life. Your
+        satisfaction is our greatest reward
+      </p>
+      <div>
+        <a href="https://www.instagram.com/nclhospitality/" target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <!-- <a href="" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>  -->
+        <a href="https://wa.me/3116292698" target="_blank"
+          ><ion-icon name="logo-whatsapp"></ion-icon
+        ></a>
+      </div>
     </footer>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>

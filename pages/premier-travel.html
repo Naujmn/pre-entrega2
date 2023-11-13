@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-    crossorigin="anonymous"
-  />
-    <link rel="stylesheet" href="../css/style.css">
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" sizes="32x32" type="png" href="../img/favicon.png" />
     <title>Document</title>
-</head>
-<body>
-    <header class="barra">
+  </head>
+  <body>
+    <!--<header class="barra">
         <img src="../img/logo.png" alt="Logo nclhospitality">
         <nav>
             <ul>
@@ -25,163 +25,141 @@
                 <li><a href="./contact.html">CONTACT</a></li>
             </ul>
         </nav>
+    </header>-->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top barra">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../img/logo.png" alt="Logo nclhospitality"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about-us.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./premier-travel.html"
+                  >PREMIER TRAVEL</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reviews.html">REVIEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-
     <main>
-        <!--
-        <section class="carrusel">
-            <div>
-                <img src="./img/lugares/muelle.jpg" alt="Muelle" />
-                <h2>Our Premier service includes</h2>
-                <p>1. Club lounge and room upgrades</p>
-                <p>2. Seat selection with checked bag</p>
-                <p>3. Dedicated concierge service</p>
-                <p>4. Elevated experiences</p>
-            </div>
-            <div>
-                <img src="./img/lugares/cartagena.JPG" alt="Ciudad de Cartagena" />
-                <h3>Cartagena</h3>
-                <p>
-                    Discover the historical and coastal magic of Cartagena, where
-                    cobblestone streets and turquoise waters will transport you to a
-                    romantic and adventurous past.
-                </p>
-                <a href="./pages/contact.html">Inquie</a>
-            </div>
-            <div>
-                <img src="./img/lugares/medellin.jpg" alt="Ciudad de Medellin" />
-                <h3>Medellin</h3>
-                <p>
-                    Immerse yourself in the vibrant and cultural energy of Medellín, a
-                    city that combines modernity, art, and nature to offer you a unique
-                    and unforgettable experience.
-                </p>
-                <a href="./pages/contact.html">Inquie</a>
-            </div>
-            <div>
-                <img src="./img/lugares/bogota.jpg" alt="Ciudad de Bogotá" />
-                <h3>Bogotá</h3>
-                <p>
-                    Engage with the cultural and modern vibrancy of Bogotá, Colombia's
-                    capital, where history and authenticity come together in captivating
-                    museums and enticing culinary experiences.
-                </p>
-                <a href="./pages/contact.html">Inquie</a>
-            </div>
-            <div>
-                <img src="./img/lugares/eje-cafetero.jpg" alt="Eje Cafetero" />
-                <h3>Eje Cafetero</h3>
-                <p>
-                    Indulge in the genuine essence of the Coffee Triangle, where lush
-                    hills and the fragrance of coffee combine to offer a rejuvenating
-                    getaway immersed in nature and rural traditions.
-                </p>
-                <a href="./pages/contact.html">Inquie</a>
-            </div>
-            <div>
-                <img src="./img/lugares/villa-de-leyva.jpg" alt="Pueblo Villa De Leyva" />
-                <h3>Villa De Leyva</h3>
-                <p>
-                    Discover the charming Villa de Leyva, a colonial treasure with
-                    cobblestone streets and historic squares that will immerse you in a
-                    past of serenity and elegance.
-                </p>
-                <a href="./pages/contact.html">Inquie</a>
-            </div>
-        </section>-->
-        <section class="carousel-boos">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../img/lugares/muelle.jpg" class="d-block w-100" alt="Muelle" width="600px" height="600px">
-                    <div class="carousel-caption  d-none d-md-block">
-                      <h5>Our Premier service includes</h5>
-                      <p>1. Club lounge and room upgrades.</p>
-                      <p>2. Seat selection with checked bag.</p>
-                      <p>3. Dedicated concierge service.</p>
-                      <p>4. Elevated experiences.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/lugares/cartagena.jpg" class="d-block w-100" alt="Cartagena" width="600px" height="600px">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Cartagena</h5>
-                      <p>Discover the historical and coastal magic of Cartagena, where
-                        cobblestone streets and turquoise waters will transport you to a
-                        romantic and adventurous past.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/lugares/medellin.jpg" class="d-block w-100" alt="Medellin" width="600px" height="600px">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Medellin</h5>
-                      <p>Immerse yourself in the vibrant and cultural energy of Medellín, a
-                        city that combines modernity, art, and nature to offer you a unique
-                        and unforgettable experience.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/lugares/bogota.jpg" class="d-block w-100" alt="Bogota" width="600px" height="600px">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Bogotá</h5>
-                      <p>Engage with the cultural and modern vibrancy of Bogotá, Colombia's
-                        capital, where history and authenticity come together in captivating
-                        museums and enticing culinary experiences.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/lugares/eje-cafetero.jpg" class="d-block w-100" alt="Eje Cafetero" width="600px" height="600px">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Eje Cafetero</h5>
-                      <p>Indulge in the genuine essence of the Coffee Triangle, where lush
-                        hills and the fragrance of coffee combine to offer a rejuvenating
-                        getaway immersed in nature and rural traditions.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/lugares/villa-de-leyva.jpg" class="d-block w-100" alt="Villa De Leyva" width="600px" height="600px">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Villa De Leyva</h5>
-                      <p>Discover the charming Villa de Leyva, a colonial treasure with
-                        cobblestone streets and historic squares that will immerse you in a
-                        past of serenity and elegance.</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </section>
+      <section class="carrusel">
+        <div>
+          <img src="../img/lugares/muelle.jpg" alt="Muelle" />
+          <h2>Our Premier service includes</h2>
+          <p>1. Club lounge and room upgrades</p>
+          <p>2. Seat selection with checked bag</p>
+          <p>3. Dedicated concierge service</p>
+          <p>4. Elevated experiences</p>
+        </div>
+        <div>
+          <img src="../img/lugares/cartagena.JPG" alt="Ciudad de Cartagena" />
+          <h3>Cartagena</h3>
+          <p>
+            Discover the historical and coastal magic of Cartagena, where
+            cobblestone streets and turquoise waters will transport you to a
+            romantic and adventurous past.
+          </p>
+          <a href="./pages/contact.html">Inquie</a>
+        </div>
+        <div>
+          <img src="../img/lugares/medellin.jpg" alt="Ciudad de Medellin" />
+          <h3>Medellin</h3>
+          <p>
+            Immerse yourself in the vibrant and cultural energy of Medellín, a
+            city that combines modernity, art, and nature to offer you a unique
+            and unforgettable experience.
+          </p>
+          <a href="./pages/contact.html">Inquie</a>
+        </div>
+        <div>
+          <img src="../img/lugares/bogota.jpg" alt="Ciudad de Bogotá" />
+          <h3>Bogotá</h3>
+          <p>
+            Engage with the cultural and modern vibrancy of Bogotá, Colombia's
+            capital, where history and authenticity come together in captivating
+            museums and enticing culinary experiences.
+          </p>
+          <a href="./pages/contact.html">Inquie</a>
+        </div>
+        <div>
+          <img src="../img/lugares/eje-cafetero.jpg" alt="Eje Cafetero" />
+          <h3>Eje Cafetero</h3>
+          <p>
+            Indulge in the genuine essence of the Coffee Triangle, where lush
+            hills and the fragrance of coffee combine to offer a rejuvenating
+            getaway immersed in nature and rural traditions.
+          </p>
+          <a href="./pages/contact.html">Inquie</a>
+        </div>
+        <div>
+          <img
+            src="../img/lugares/villa-de-leyva.jpg"
+            alt="Pueblo Villa De Leyva"
+          />
+          <h3>Villa De Leyva</h3>
+          <p>
+            Discover the charming Villa de Leyva, a colonial treasure with
+            cobblestone streets and historic squares that will immerse you in a
+            past of serenity and elegance.
+          </p>
+          <a href="./pages/contact.html">Inquie</a>
+        </div>
+      </section>
     </main>
     <footer>
-        <img src="../img/logo-blanco.png" alt="">
-        <p>Thank you for choosing us to bring your travel dreams to life. Your satisfaction is our greatest reward</p>
-        <div>
-            <a href="https://www.instagram.com/nclhospitality/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a> 
-            <a href="" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>  
-            <a href="https://wa.me/3116292698" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>     
-        </div>
+      <img src="../img/logo-blanco.png" alt="" />
+      <p>
+        Thank you for choosing us to bring your travel dreams to life. Your
+        satisfaction is our greatest reward
+      </p>
+      <div>
+        <a href="https://www.instagram.com/nclhospitality/" target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <!-- <a href="" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a> -->
+        <a href="https://wa.me/3116292698" target="_blank"
+          ><ion-icon name="logo-whatsapp"></ion-icon
+        ></a>
+      </div>
     </footer>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>
