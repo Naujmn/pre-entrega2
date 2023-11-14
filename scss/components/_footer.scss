@@ -1,0 +1,25 @@
+footer{
+    background-color:$color-secundario;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        height: 70px;
+    }
+    p{
+        color: $color-primario;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 5px;
+    }
+    div {
+        a{
+            color: $color-secundario;
+            font-size: 40px;
+            display: inline-block;
+            margin: 5px;
+        }
+    }
+}

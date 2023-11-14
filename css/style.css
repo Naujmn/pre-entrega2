@@ -387,7 +387,7 @@
 }
 
 .data > p > i {
-    color: #73794a;;
+    color: #73794a;
     margin-right: 10px;
     font-size:30px;
 }
@@ -517,14 +517,14 @@ footer div a{
 
 /*---MEDIA QUERY--*/
 
-@media (max-width:686px) {
+/*@media (max-width:686px) {
     .barra{
         flex-direction: column;
     }
     .barra nav ul li a{
         font-size: 12px;
     }
-}
+}*/
 
 @media (max-width:686px) {
     .phrase div img{
