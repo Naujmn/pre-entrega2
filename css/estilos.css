@@ -4,107 +4,183 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .barra {
-  background-color: #FDFDFD; }
-  .barra a img {
-    height: 70px; }
+  background-color: #FDFDFD;
+  position: sticky;
+}
+.barra a img {
+  height: 70px;
+}
 
 /*---MAIN----*/
 /*---HOME----*/
 .phrase {
   width: 100%;
   height: 100vh;
-  background-image: url("../img/home.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  .phrase div img {
-    height: 300px; }
-  .phrase h1 {
-    color: #FDFDFD;
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center; }
+  align-items: center;
+  margin-bottom: 10px;
+}
+.phrase div img {
+  height: 300px;
+  margin-bottom: 10px;
+}
+.phrase h1 {
+  color: #FDFDFD;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+/*---Intro---*/
+.intro {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.intro div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro div h2 {
+  color: #73794A;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+}
+.intro div p {
+  color: #73794A;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  padding: 10px;
+}
+.intro div img {
+  width: 100vh;
+  height: 100vh;
+}
+.intro div a {
+  width: 250px;
+  text-decoration: none;
+  color: #FDFDFD;
+  background-color: #D4AF37;
+  border-radius: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+  align-self: center;
+  transition-duration: 0.4s;
+}
+
+.intro div a:hover {
+  background-color: #FDFDFD;
+  color: #D4AF37;
+  border: 2px solid #D4AF37;
+}
 
 /*---ABOUT US---*/
 .grid-team {
   margin: 5px;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr; }
-  .grid-team .about {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
-    .grid-team .about h2 {
-      color: #73794A;
-      border: 2px solid #73794A;
-      border-radius: 16px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      text-align: center;
-      margin: 5px; }
-    .grid-team .about p2 {
-      color: #73794A;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 500;
-      text-align: justify; }
-  .grid-team .persons {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/colombia.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: ".      nicolas         ." "juan  valentina  ricardo" "juanjo     .      morena"; }
-    .grid-team .persons .nicolas {
-      grid-area: nicolas;
-      display: grid;
-      place-items: center; }
-    .grid-team .persons .juan {
-      grid-area: juan;
-      display: grid;
-      place-items: center; }
-    .grid-team .persons .valentina {
-      grid-area: valentina;
-      display: grid;
-      place-items: center; }
-    .grid-team .persons .ricardo {
-      grid-area: ricardo;
-      display: grid;
-      place-items: center; }
-    .grid-team .persons .juanjo {
-      grid-area: juanjo;
-      display: grid;
-      place-items: center; }
-    .grid-team .persons .morena {
-      grid-area: morena;
-      display: grid;
-      place-items: center; }
-    .grid-team .persons img {
-      width: auto;
-      height: 150px; }
-    .grid-team .persons h3 {
-      color: #FDFDFD;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      text-align: center; }
-    .grid-team .persons p {
-      color: #FDFDFD;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 500;
-      text-align: center;
-      margin: 5px; }
+  grid-template-columns: 1fr 1fr;
+}
+.grid-team .about {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.grid-team .about h2 {
+  color: #73794A;
+  border: 2px solid #73794A;
+  border-radius: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 5px;
+}
+.grid-team .about p2 {
+  color: #73794A;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: justify;
+}
+.grid-team .persons {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/colombia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: ".      nicolas         ." "juan  valentina  ricardo" "juanjo     .      morena";
+}
+.grid-team .persons .nicolas {
+  grid-area: nicolas;
+  display: grid;
+  place-items: center;
+}
+.grid-team .persons .juan {
+  grid-area: juan;
+  display: grid;
+  place-items: center;
+}
+.grid-team .persons .valentina {
+  grid-area: valentina;
+  display: grid;
+  place-items: center;
+}
+.grid-team .persons .ricardo {
+  grid-area: ricardo;
+  display: grid;
+  place-items: center;
+}
+.grid-team .persons .juanjo {
+  grid-area: juanjo;
+  display: grid;
+  place-items: center;
+}
+.grid-team .persons .morena {
+  grid-area: morena;
+  display: grid;
+  place-items: center;
+}
+.grid-team .persons img {
+  width: auto;
+  height: 150px;
+}
+.grid-team .persons h3 {
+  color: #FDFDFD;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+.grid-team .persons p {
+  color: #FDFDFD;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin: 5px;
+}
 
 /*---CARRUSEL---*/
 .carrusel {
@@ -117,50 +193,57 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  align-items: center; }
-  .carrusel div {
-    border-radius: 18px;
-    width: 345px;
-    height: 485px;
-    margin: 20px;
-    text-align: center;
-    display: inline-block; }
-    .carrusel div img {
-      width: 350px;
-      height: 350px;
-      border-radius: 14px; }
-    .carrusel div h2 {
-      color: #FDFDFD;
-      font-size: 19px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700; }
-    .carrusel div h3 {
-      color: #FDFDFD;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      text-align: left;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: auto; }
-    .carrusel div p {
-      color: #FDFDFD;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 500;
-      text-align: justify;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 10px; }
-    .carrusel div a {
-      text-decoration: none;
-      color: #D4AF37;
-      background-color: #FDFDFD;
-      border-radius: 13px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      padding: 5px;
-      text-align: center; }
+  align-items: center;
+}
+.carrusel div {
+  border-radius: 18px;
+  width: 345px;
+  height: 485px;
+  margin: 20px;
+  text-align: center;
+  display: inline-block;
+}
+.carrusel div img {
+  width: 350px;
+  height: 350px;
+  border-radius: 14px;
+}
+.carrusel div h2 {
+  color: #FDFDFD;
+  font-size: 19px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.carrusel div h3 {
+  color: #FDFDFD;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.carrusel div p {
+  color: #FDFDFD;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.carrusel div a {
+  text-decoration: none;
+  color: #D4AF37;
+  background-color: #FDFDFD;
+  border-radius: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 5px;
+  text-align: center;
+}
 
 /*---REVIEWS---*/
 .reviews {
@@ -169,232 +252,285 @@
   background-color: #FDFDFD;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
-  .reviews h2 {
-    color: #73794A;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 35px;
-    text-align: center;
-    margin-top: 10px; }
-  .reviews .comments {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    .reviews .comments div {
-      width: 350px;
-      height: 330px;
-      margin: 25px;
-      text-align: center;
-      display: inline-block; }
-      .reviews .comments div img {
-        width: 200px;
-        height: 200px;
-        margin: 10px;
-        border-radius: 16px; }
-      .reviews .comments div h3 {
-        color: #73794A;
-        font-size: 16px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700; }
-      .reviews .comments div p {
-        color: #73794A;
-        font-size: 13px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        text-align: justify;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10px; }
+  background-position: center;
+}
+.reviews h2 {
+  color: #73794A;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 10px;
+}
+.reviews .comments {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.reviews .comments div {
+  width: 350px;
+  height: 330px;
+  margin: 25px;
+  text-align: center;
+  display: inline-block;
+}
+.reviews .comments div img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 16px;
+}
+.reviews .comments div h3 {
+  color: #73794A;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.reviews .comments div p {
+  color: #73794A;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
 
 /*----CONTACTO----*/
 .container {
-  background: linear-gradient(#000000cc, #000000cc), url(../img/contact.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   padding: 40px;
-  height: 600px; }
-  .container .box-info {
-    color: #FDFDFD;
-    display: flex;
-    flex-direction: column;
-    gap: 50px; }
-    .container .box-info > h2 {
-      color: #FDFDFD;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800;
-      font-size: 35px;
-      text-align: left;
-      letter-spacing: 5px; }
-    .container .box-info .data {
-      display: flex;
-      flex-direction: column;
-      gap: 25px; }
-      .container .box-info .data > p {
-        color: #FDFDFD;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 1rem; }
-        .container .box-info .data > p > i {
-          color: #73794A;
-          margin-right: 10px;
-          font-size: 30px; }
-    .container .box-info .links {
-      display: flex; }
-      .container .box-info .links img {
-        width: 150px;
-        height: auto; }
-  .container form {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 15px; }
-    .container form > button {
-      width: 100%;
-      padding: 10px;
-      outline: none;
-      background: #73794A;
-      color: #FDFDFD;
-      border: none;
-      transition: .1s;
-      cursor: pointer;
-      font-size: 1rem;
-      border-radius: 18px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 400; }
-    .container form .input-box {
-      position: relative; }
-      .container form .input-box > input {
-        width: 100%;
-        height: 40px;
-        padding: 0 10px;
-        outline: none;
-        background: #ffffff1a;
-        border: 3px solid transparent;
-        letter-spacing: 1px;
-        transition: .3s;
-        color: #FDFDFD;
-        border-radius: 18px; }
-        .container form .input-box > input:focus ~ i {
-          color: #73794A; }
-      .container form .input-box > textarea {
-        width: 100%;
-        height: 130px;
-        padding: 10px;
-        background: #ffffff1a;
-        border: 3px solid transparent;
-        letter-spacing: 1px;
-        outline: none;
-        transition: .3s;
-        color: #FDFDFD;
-        letter-spacing: 1.5px;
-        border-radius: 18px; }
-      .container form .input-box > i {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 10px;
-        color: #ffffff4d;
-        transition: .3s; }
-  .container .input-box > input::placeholder,
-  .container .input-box > textarea::placeholder {
-    color: #a3a3a3; }
-  .container .input-box > input:focus::placeholder,
-  .container .input-box > textarea:focus::placeholder {
-    color: transparent; }
-  .container .input-box > input:focus,
-  .container .input-box > textarea:focus {
-    border-bottom: 3px solid #73794A;
-    animation: shake .2s; }
-  .container form > button:hover,
-  .container .links > a:hover {
-    background: #73794A; }
+  height: 600px;
+}
+.container .box-info {
+  color: #FDFDFD;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.container .box-info > h2 {
+  color: #FDFDFD;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  text-align: left;
+  letter-spacing: 5px;
+}
+.container .box-info .data {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.container .box-info .data > p {
+  color: #FDFDFD;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.container .box-info .data > p > i {
+  color: #73794A;
+  margin-right: 10px;
+  font-size: 30px;
+}
+.container .box-info .links {
+  display: flex;
+}
+.container .box-info .links img {
+  width: 150px;
+  height: auto;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+.container form > button {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background: #73794A;
+  color: #FDFDFD;
+  border: none;
+  transition: 0.1s;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.container form .input-box {
+  position: relative;
+}
+.container form .input-box > input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1019607843);
+  border: 3px solid transparent;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  color: #FDFDFD;
+  border-radius: 18px;
+}
+.container form .input-box > input:focus ~ i {
+  color: #73794A;
+}
+.container form .input-box > textarea {
+  width: 100%;
+  height: 130px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1019607843);
+  border: 3px solid transparent;
+  letter-spacing: 1px;
+  outline: none;
+  transition: 0.3s;
+  color: #FDFDFD;
+  letter-spacing: 1.5px;
+  border-radius: 18px;
+}
+.container form .input-box > i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: rgba(255, 255, 255, 0.3019607843);
+  transition: 0.3s;
+}
+.container .input-box > input::-moz-placeholder, .container .input-box > textarea::-moz-placeholder {
+  color: #a3a3a3;
+}
+.container .input-box > input::placeholder,
+.container .input-box > textarea::placeholder {
+  color: #a3a3a3;
+}
+.container .input-box > input:focus::-moz-placeholder, .container .input-box > textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+.container .input-box > input:focus::placeholder,
+.container .input-box > textarea:focus::placeholder {
+  color: transparent;
+}
+.container .input-box > input:focus,
+.container .input-box > textarea:focus {
+  border-bottom: 3px solid #73794A;
+  animation: shake 0.2s;
+}
+.container form > button:hover,
+.container .links > a:hover {
+  background: #73794A;
+}
 
 footer {
   background-color: #73794A;
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
-  footer img {
-    height: 70px; }
-  footer p {
-    color: #FDFDFD;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    margin: 5px; }
-  footer a {
-    color: #FDFDFD;
-    font-size: 40px;
-    display: inline-block;
-    margin: 5px; }
+  align-items: center;
+}
+footer img {
+  height: 70px;
+}
+footer p {
+  color: #FDFDFD;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 5px;
+}
+footer a {
+  color: #FDFDFD;
+  font-size: 40px;
+  display: inline-block;
+  margin: 5px;
+}
 
 @media (max-width: 686px) {
   .phrase div img {
-    height: 200px; }
+    height: 200px;
+  }
   .phrase h1 {
-    font-size: 20px; } }
-
+    font-size: 20px;
+  }
+}
 @media (max-width: 350px) {
   .phrase div img {
-    height: 125px; }
+    height: 125px;
+  }
   .phrase h1 {
-    font-size: 12px; } }
-
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 1176px) {
   .grid-team .persons {
     width: 100%;
     height: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "nicolas       juan" "valentina  ricardo" "juanjo      morena"; } }
-
+    grid-template-areas: "nicolas       juan" "valentina  ricardo" "juanjo      morena";
+  }
+}
 @media screen and (max-width: 350px) {
   .grid-team .persons {
     width: 100%;
     height: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "nicolas       juan" "valentina  ricardo" "juanjo      morena"; }
-    .grid-team .persons h3 {
-      font-size: 15px; }
-    .grid-team .persons p {
-      font-size: 15px; }
+    grid-template-areas: "nicolas       juan" "valentina  ricardo" "juanjo      morena";
+  }
+  .grid-team .persons h3 {
+    font-size: 15px;
+  }
+  .grid-team .persons p {
+    font-size: 15px;
+  }
   .grid-team .about h2 {
-    font-size: 15px; }
+    font-size: 15px;
+  }
   .grid-team .about p2 {
-    font-size: 15px; } }
-
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 768px) {
   .grid-team {
     margin: 5px;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr; } }
-
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 1186px) {
   .reviews .comments div {
-    height: 330px; } }
-
+    height: 330px;
+  }
+}
 @media (max-width: 876px) {
   .reviews {
     width: auto;
-    height: 1200px; }
-    .reviews .comments {
-      flex-direction: column; } }
-
+    height: 1200px;
+  }
+  .reviews .comments {
+    flex-direction: column;
+  }
+}
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0); }
+    transform: translateX(0);
+  }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px); }
+    transform: translateX(-10px);
+  }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px); } }
-
+    transform: translateX(10px);
+  }
+}
 @media screen and (max-width: 997px) {
   .container {
     width: 95%;
@@ -403,12 +539,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px; }
-    .container .box-info {
-      gap: 15px; }
-      .container .box-info h2 {
-        font-size: 1.5rem; } }
-
+    gap: 20px;
+  }
+  .container .box-info {
+    gap: 15px;
+  }
+  .container .box-info h2 {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (max-width: 504px) {
   .container {
     width: 95%;
@@ -417,26 +556,34 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px; }
-    .container .box-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 15px; }
-      .container .box-info h2 {
-        font-size: 1.5rem; }
-    .container .links img {
-      width: auto;
-      height: 70px; } }
-
+    gap: 20px;
+  }
+  .container .box-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .container .box-info h2 {
+    font-size: 1.5rem;
+  }
+  .container .links img {
+    width: auto;
+    height: 70px;
+  }
+}
 @media screen and (max-width: 425px) {
   .container .box-info .data p {
-    font-size: 14px; }
+    font-size: 14px;
+  }
   .container .box-info .links img {
     width: auto;
-    height: 70px; } }
-
+    height: 70px;
+  }
+}
 @media screen and (max-width: 425px) {
   footer p {
-    font-size: 12px; } }
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
