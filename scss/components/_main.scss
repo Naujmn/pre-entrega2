@@ -51,19 +51,13 @@
             font-size: 20px;
             font-family: 'Montserrat', sans-serif;
             text-align: justify;
-            padding: 10px;
+            padding: 15px;
         }
         img{
-            width: 100vh;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
         }
         a{
-
-        }
-    }
-}
-
-.intro div a{
             width: 250px;
             text-decoration: none;
             color: $color-primario;
@@ -75,12 +69,123 @@
             text-align: center;
             align-self: center;
             transition-duration: 0.4s;
+            &:hover{
+                background-color: $color-primario;
+                color: $color-terciario;
+                border: 2px solid $color-terciario;
+            }
+        }
+    }
 }
-.intro div a:hover{
-    background-color: $color-primario;
-    color: $color-terciario;
-    border: 2px solid $color-terciario;
-}
+
+/*---why colombia?--*/
+.colombia{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+  "title   title" 
+  "one         ."
+  ".         two"
+  "three       ."
+  ".         four"
+  "five       .";
+  .title{
+    grid-area: title;
+    display: grid;
+    place-items: center;
+    h2{
+        color: $color-secundario;
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+  }  
+  .one{
+        grid-area: one;
+        display: grid;
+        place-items: start;
+        border: 4px solid $color-terciario;
+        border-radius: 16px;
+        margin: 0 10px 10px 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        animation: show 1s 3s ease forwards;
+    }
+    .two{
+        grid-area: two;
+        display: grid;
+        place-items: start;
+        border: 4px solid $color-terciario;
+        border-radius: 16px;
+        margin: 0 10px 10px 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        animation: show 1s  4s ease forwards;
+    }
+    .three{
+        grid-area: three;
+        display: grid;
+        place-items: center;
+        border: 4px solid $color-terciario;
+        border-radius: 16px;
+        margin: 0 10px 10px 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        animation: show 1s 5s ease forwards;
+    }
+    .four{
+        grid-area: four;
+        display: grid;
+        place-items: start;
+        border: 4px solid $color-terciario;
+        border-radius: 16px;
+        margin: 0 10px 10px 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        animation: show 1s 6s ease forwards;
+    }
+    .five{
+        grid-area: five;
+        display: grid;
+        place-items: center;
+        border: 4px solid $color-terciario;
+        border-radius: 16px;
+        margin: 0 10px 10px 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        animation: show 1s 7s ease forwards;
+    }
+    }
+    p{
+        color: $color-secundario;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 17px;
+        text-align: justify;
+        padding: 15px;
+    }
+    i{
+        font-size: 40px;
+    }
+
+
+
 
 /*---ABOUT US---*/
 
@@ -241,7 +346,7 @@
 
 .reviews{
     width: 100%;
-    height: 100%;
+    height: 524px;
     background-color: $color-primario;
     background-repeat: no-repeat;
     background-size: cover;
